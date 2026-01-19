@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Student Info Card Generate</h1>
+
+    <div class="main-container">
+        <div class="form-container">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" placeholder="Enter Your name" />
+
+            <label for="roll">Roll No:</label>
+            <input type="text" id="roll" placeholder="Enter Your roll no" />
+
+            <label for="email">Student Email:</label>
+            <input type="text" id="email" placeholder="Enter Your email" />
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="Enter Your age" />
+
+            <label for="age">Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" />Male</label>
+                <label><input type="radio" name="gender" value="Female" />Female</label>
+            </div><br>
+
+            <label for="age">Course:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="web" value="web" />Web</label>
+                <label><input type="checkbox" name="DataScience" value="DataScience" />DataScience</label>
+            </div>
+            <br>
+            <label for="marks">Marks:</label>
+            <span id="marksValue">50</span>/100
+            <input type="range" id="marks" min="0" max="100" value="50" />
+
+            <label for="photo">Upload Student Photo:</label>
+            <input type="file" id="photo" accept="image/*" />
+            <button id="generatorBtn">Generate Card</button>
+        </div>
+
+        <!--card display-->
+        <div class="card-container">
+            <div class="student-card" id="studentcard">
+                <img src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Student Photo" class="student-photo" id="cardImage">
+                <h2 id="cardName">Student Name</h2>
+                <p id="cardRoll">Roll no:</p>
+                <p id="cardEmail">Emaill:</p>
+                <p id="cardAge">Age:</p>
+                <p id="cardGender">Gender:</p>
+                <p id="cardCourse">Course:</p>
+                <p id="cardMarks">Marks:</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
